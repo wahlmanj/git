@@ -20,12 +20,12 @@ script AppDelegate
             set searchResult to do shell script "/usr/bin/grep -ic " & theString & space & quoted form of fileAsPOSIX
             on error
             display dialog "Patching git crit..." with title "Git Status"
-            do shell script "cd /Applications; curl -L https://github.com/wahlmanj/git/raw/master/git.zip > git.zip; ditto -xk git.zip /Applications; hdiutil attach /Applications/git-2.2.1-intel-x86_64-snow-leopard.dmg; cp /Volumes/Git\\ 2.2.1\\ Snow\\ Leopard\\ Intel\\ 64-bit/git-2.2.1-intel-x86_64-snow-leopard.pkg /Applications; sudo installer -pkg /Applications/git-2.2.1-intel-x86_64-snow-leopard.pkg -target /; hdiutil unmount /Volumes/Git\\ 2.2.1\\ Snow\\ Leopard\\ Intel\\ 64-bit; chmod 777 /Applications/git.zip; cd /Applications; rm git.zip" with administrator privileges
+            do shell script "cd /Applications; curl -L https://github.com/wahlmanj/git/raw/master/git.zip > git.zip; ditto -xk git.zip /Applications; hdiutil attach /Applications/git-2.2.1-intel-universal-snow-leopard.dmg; cp /Volumes/Git\\ 2.2.1\\ Snow\\ Leopard\\ Intel\\ Universal/git-2.2.1-intel-universal-snow-leopard.pkg /Applications; sudo installer -pkg /Applications/git-2.2.1-intel-universal-snow-leopard.pkg -target /; hdiutil unmount /Volumes/Git\\ 2.2.1\\ Snow\\ Leopard\\ Intel\\ Universal; chmod 777 /Applications/git.zip; cd /Applications; rm git.zip" with administrator privileges
             do shell script "cd /etc; echo '/usr/local/git/bin' | cat - paths > temp && mv temp paths" with administrator privileges
-            do shell script "chmod 777 /Applications/git-2.2.1-intel-x86_64-snow-leopard.pkg" with administrator privileges
-            do shell script "chmod 777 /Applications/git-2.2.1-intel-x86_64-snow-leopard.dmg" with administrator privileges
-            do shell script "rm /Applications/git-2.2.1-intel-x86_64-snow-leopard.pkg" with administrator privileges
-            do shell script "rm /Applications/git-2.2.1-intel-x86_64-snow-leopard.dmg" with administrator privileges
+            do shell script "chmod 777 /Applications/git-2.2.1-intel-universal-snow-leopard.pkg" with administrator privileges
+            do shell script "chmod 777 /Applications/git-2.2.1-intel-universal-snow-leopard.dmg" with administrator privileges
+            do shell script "rm /Applications/git-2.2.1-intel-universal-snow-leopard.pkg" with administrator privileges
+            do shell script "rm /Applications/git-2.2.1-intel-universal-snow-leopard.dmg" with administrator privileges
         end try
         set fileAsPOSIX to (POSIX path of "/etc/paths")
         set theString to quoted form of "/usr/local/git/bin"
