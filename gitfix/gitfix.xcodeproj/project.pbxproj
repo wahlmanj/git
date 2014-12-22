@@ -12,6 +12,13 @@
 		CE3588B61A4786DB00B3A0AA /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = CE3588B51A4786DB00B3A0AA /* AppDelegate.applescript */; };
 		CE3588B81A4786DB00B3A0AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3588B71A4786DB00B3A0AA /* Images.xcassets */; };
 		CE3588BB1A4786DB00B3A0AA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3588B91A4786DB00B3A0AA /* MainMenu.xib */; };
+		CEBAD8551A47FD7C00875D33 /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD84E1A47FD7C00875D33 /* 1024x1024.png */; };
+		CEBAD8561A47FD7C00875D33 /* 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD84F1A47FD7C00875D33 /* 128x128.png */; };
+		CEBAD8571A47FD7C00875D33 /* 16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD8501A47FD7C00875D33 /* 16x16.png */; };
+		CEBAD8581A47FD7C00875D33 /* 256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD8511A47FD7C00875D33 /* 256x256.png */; };
+		CEBAD8591A47FD7C00875D33 /* 32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD8521A47FD7C00875D33 /* 32x32.png */; };
+		CEBAD85A1A47FD7C00875D33 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD8531A47FD7C00875D33 /* 512x512.png */; };
+		CEBAD85B1A47FD7C00875D33 /* 64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBAD8541A47FD7C00875D33 /* 64x64.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		CE3588B51A4786DB00B3A0AA /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
 		CE3588B71A4786DB00B3A0AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE3588BA1A4786DB00B3A0AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CEBAD84E1A47FD7C00875D33 /* 1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024x1024.png; sourceTree = "<group>"; };
+		CEBAD84F1A47FD7C00875D33 /* 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128x128.png; sourceTree = "<group>"; };
+		CEBAD8501A47FD7C00875D33 /* 16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16x16.png; sourceTree = "<group>"; };
+		CEBAD8511A47FD7C00875D33 /* 256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256x256.png; sourceTree = "<group>"; };
+		CEBAD8521A47FD7C00875D33 /* 32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32x32.png; sourceTree = "<group>"; };
+		CEBAD8531A47FD7C00875D33 /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512x512.png; sourceTree = "<group>"; };
+		CEBAD8541A47FD7C00875D33 /* 64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64x64.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 		CE3588B01A4786DB00B3A0AA /* gitfix */ = {
 			isa = PBXGroup;
 			children = (
+				CEBAD84D1A47FD7C00875D33 /* icons */,
 				CE3588B51A4786DB00B3A0AA /* AppDelegate.applescript */,
 				CE3588B71A4786DB00B3A0AA /* Images.xcassets */,
 				CE3588B91A4786DB00B3A0AA /* MainMenu.xib */,
@@ -80,6 +95,20 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		CEBAD84D1A47FD7C00875D33 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAD84E1A47FD7C00875D33 /* 1024x1024.png */,
+				CEBAD84F1A47FD7C00875D33 /* 128x128.png */,
+				CEBAD8501A47FD7C00875D33 /* 16x16.png */,
+				CEBAD8511A47FD7C00875D33 /* 256x256.png */,
+				CEBAD8521A47FD7C00875D33 /* 32x32.png */,
+				CEBAD8531A47FD7C00875D33 /* 512x512.png */,
+				CEBAD8541A47FD7C00875D33 /* 64x64.png */,
+			);
+			path = icons;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -138,7 +167,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAD8561A47FD7C00875D33 /* 128x128.png in Resources */,
+				CEBAD8551A47FD7C00875D33 /* 1024x1024.png in Resources */,
+				CEBAD8591A47FD7C00875D33 /* 32x32.png in Resources */,
 				CE3588B81A4786DB00B3A0AA /* Images.xcassets in Resources */,
+				CEBAD8571A47FD7C00875D33 /* 16x16.png in Resources */,
+				CEBAD8581A47FD7C00875D33 /* 256x256.png in Resources */,
+				CEBAD85A1A47FD7C00875D33 /* 512x512.png in Resources */,
+				CEBAD85B1A47FD7C00875D33 /* 64x64.png in Resources */,
 				CE3588BB1A4786DB00B3A0AA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +324,7 @@
 				CE3588C01A4786DB00B3A0AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
