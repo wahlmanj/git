@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Installing the Xcode command line tools on 10.7.x or higher
+# Check if command line tools are installed
 
-osx_vers=$(sw_vers -productVersion | awk -F "." '{print $2}')
+if [ -d /Library/Developer/CommandLineTools ]; then
+	else
+	osx_vers=$(sw_vers -productVersion | awk -F "." '{print $2}')
 cmd_line_tools_temp_file="/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
 
 # Installing the latest Xcode command line tools on 10.9.x or higher
@@ -27,6 +29,8 @@ if [[ "$osx_vers" -ge 9 ]]; then
 	if [[ -f "$cmd_line_tools_temp_file" ]]; then
 	  rm "$cmd_line_tools_temp_file"
 	fi
+fi
+
 fi
 
 exit 0
