@@ -5,6 +5,7 @@
 if [ -d /Library/Developer/CommandLineTools ]; then
 echo 'CLT exists'
 	else
+	osascript -e 'tell app "System Events" to display dialog "Command line tools not detected, downloading & installing. Please Wait..." with title "OpenPlex Status" giving up after 3.5'
 	osx_vers=$(sw_vers -productVersion | awk -F "." '{print $2}')
 cmd_line_tools_temp_file="/tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress"
 
